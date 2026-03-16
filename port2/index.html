@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://kit.fontawesome.com/efbf198f8e.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Asta+Sans:wght@300..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+<link rel="icon" type="image/png" href="img/favi.png">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/index.css">
+<title>Aqua Dive</title>
+<style>
+
+/* section.review{display: none;} */
+</style>
+</head>
+<body>
+    <header class="menubar">
+        <nav class="container flex-box">
+            <div class="logo">
+                <a href="index.html"><img src="img/logo.png" alt=""></a>
+            </div>            
+            <ul class="menu flex-box"> <!-- 메인메뉴 -->                       
+                <li><a href="#">소개</a></li>    
+                <li><a href="#">전시</a></li>
+                <li><a href="#">예매</a></li>
+                <li><a href="#">안내</a></li>
+            </ul>
+            <div class="login">
+                Login
+            </div>
+        </nav>
+         <!-- 서브메뉴  -->          
+                <div class="sub "> <!-- 서브메뉴 묶음 -->
+                    <div class="container sub_box flex-box ">
+                        <ul class="blank"> </ul>
+                        <div class="sub_menu_box flex-box">
+                            <ul class="submenu ">
+                                <li><a href="#">시설 소개</a></li>
+                                <li><a href="#">스토리</a></li>
+                                </ul>
+                            <ul class="submenu">
+                                <li><a href="sub1.html">전시존</a></li>
+                                <li><a href="#">체험존</a></li>
+                            </ul>
+                            <ul class="submenu">
+                                <li><a href="sub2.html">입장권 예약</a></li>
+                                <li><a href="#">단체 예약</a></li>
+                                <li><a href="#">프로모션</a></li>
+                            </ul>
+                            <ul class="submenu">
+                                <li><a href="#">관람 안내</a></li>
+                                <li><a href="#">이벤트</a></li>
+                                <li><a href="#">오시는 길</a></li>
+                                <li><a href="#">자주 묻는 질문</a></li>
+                            </ul>
+                        </div>
+                         <ul class="blank"> </ul>
+                    </div>  <!--sub-box 끝-->
+                </div>
+           <!--sub 끝-->
+        </header>
+
+
+    <!-- 모바일 메뉴 
+    ================== -->
+    
+    <div class="mo_header"></div>
+        <div class="menu_phone" id="bt" >
+            <span></span>
+        </div>
+    
+
+
+        <div class="mo_menu">
+            <ul>
+                <li><a href="#">소개</a>
+                    <ul class="mo_submenu" id="intro">
+                        <li><a href="#">시설 소개</a></li>
+                        <li><a href="#">스토리</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">전시</a>
+                    <ul class="mo_submenu"  id="exh">
+                        <li><a href="sub1.html">전시존</a></li>
+                        <li><a href="#">체험존</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">예매</a>
+                    <ul class="mo_submenu" id="res">
+                        <li><a href="sub2.html">입장권 예매</a></li>
+                        <li><a href="#">단체 예매</a></li>
+                        <li><a href="#">프로모션</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">안내</a>
+                    <ul class="mo_submenu" id="ann">
+                        <li><a href="#">관람 안내</a></li>
+                        <li><a href="#">이벤트</a></li>
+                        <li><a href="#">오시는 길</a></li>
+                        <li><a href="#">자주 묻는 질문</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="mo_login">
+                Login
+            </div>
+        </div>
+    <!-- 모바일 메뉴 끝
+    ================== -->
+    <main>
+            <section class="banner">
+                <div class="gradient">
+                    <div class="banner_txt">
+                        <h2>
+                            도심 한가운데에서 만나는 <br> 깊은 바다, <span>AQUA DIVE</span>
+                        </h2>
+                    </div>
+                    <div class="banner_img" id="banner1">
+                        <img src="img/index_banner.gif" alt="" >
+                    </div>
+                </div>
+        </section>
+        <section class="mainintro">
+            <div class="container flex-box">
+                <div class="introbox">
+                    <div class="open ">
+                        <h2>운영시간</h2>
+                        <div class="time">
+                            <p>입장시간</p>
+                            <p>10 : 30</p>
+                        </div>
+                        <div class="time">
+                            <p>매표마감</p>
+                            <p>17 : 30</p>
+                        </div>
+                        <div class="time">
+                            <p>운영종료</p>
+                            <p>18 : 00</p>
+                        </div>
+                        <div class="time">
+                            <p>연중무휴</p>
+                        </div>
+                        <p class="caution">매표 마감은 17:30, 입장 마감은 18:00 이므로
+                        쾌적한 관람을 위해 시간을 반드시 준수해 주시기 바랍니다.</p>
+                        <div class="button-purple">자세히 보기</div>
+                    </div>
+                </div>
+                <div class="introbox">
+                    <div class="ticket">
+                        <h2>이용요금</h2>
+                        <div class="pay">
+                            <p>성인</p>
+                            <p>39,600</p>
+                        </div>
+                        <div class="pay">
+                            <p>가족</p>
+                            <p>63,700</p>
+                        </div>
+                        <div class="pay">
+                            <p>어린이</p>
+                            <p>29,500</p>
+                        </div>
+                        <div class="pay">
+                            <p>커플</p>
+                            <p>52,800</p>
+                        </div>
+                        <p class="caution">위 요금은 현장 발권가 기준이며,
+                            제휴 카드 및 단체 할인 혜택은 자세히 보기에서 확인하실 수 있습니다.</p>
+                        <div class="intro_button">
+                            <div class="button-purple">자세히 보기</div>
+                            <div onclick="alert('로그인이 필요합니다.')" class="button-red">티켓 구매</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="group">
+            <div class="container">
+                <h2>단체 방문 유형</h2>
+                <div class="flex-box">
+                    <div class="group_box" >
+                        <div class="group_hover">
+                            <img src="img/index_icon1.png" alt="">
+                            <span>학습단체</span>
+                            <p>어린이집 및 유치원·초·중·고 학생으로 구성된 학습 단체</p>
+                        </div>
+                        <div class="button-purple">자세히 보기</div>
+                    </div>
+                    <div class="group_box">
+                        <div class="group_hover">
+                            <img src="img/index_icon2.png" alt="">
+                            <span>인바운드단체</span>
+                            <p>인바운드 여행사 및 유관 기관을 통한 외국인 단체</p>
+                        </div>
+                        <div class="button-purple">자세히 보기</div>
+                    </div>
+                    <div class="group_box">
+                        <div class="group_hover">
+                            <img src="img/index_icon3.png" alt="">
+                            <span>기업단체·일반단체</span>
+                            <p>일반 기업체·관공서·지역 커뮤니티·맘 카페 방문 단체</p>
+                        </div>
+                        <div class="button-purple">자세히 보기</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="program">
+                <h2>PROGRAM</h2>
+                <div class="program_sec">
+                    <div class="program_img">
+                        <img src="img/index_program1.png" alt="">
+                        <div class="program_txt" data-aos="slide-up" data-aos-duration="1200">
+                            <span>생태설명회</span>
+                            <p>다양한 생태설명회 <br> 프로그램을 만나보세요.</p>
+                        </div>
+                        <div>
+                            <div class="button-purple"  data-aos="fade-up"  data-aos-delay="200" data-aos-duration="1500">자세히 보기
+                            </div>
+                        </div>
+                    </div>
+                    <div class="program_img">
+                        <img src="img/index_program2.png" alt="">
+                        <div class="program_txt" class="program_txt" data-aos="slide-up" data-aos-duration="1200">
+                            <span>피딩 프로그램</span>
+                            <p>바다 생물들의 먹이 활동을 <br> 가까이에서 관찰해 보세요.</p>
+                        </div>
+                        <div>
+                            <div class="button-purple" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1500">자세히 보기</div>
+                        </div>
+                    </div>
+                    <div class="program_img">
+                        <img src="img/index_program3.png" alt="">
+                        <div class="program_txt" class="program_txt" data-aos="slide-up" data-aos-duration="1200">
+                            <span>공연 프로그램</span>
+                            <p>바다를 주제로 한 공연과 함께 <br> 특별한 순간을 만나보세요.</p>
+                        </div>
+                        <div>
+                            <div class="button-purple" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1500">자세히 보기</div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section class="review">
+            <div class="container">
+                <h2>사용자 리뷰</h2>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="review_box">
+                                <img src="img/index_review1.png" alt="">
+                                <div class="txt">
+                                    <span> 평점<span> &starf; &starf; &starf; &starf; &starf;</span></span>
+                                    <p>
+                                    와...기대 없이 갔는데 생각보다 너무 재밌어서 시간 가는 줄 몰랐어요.
+                                    아이 보여주려고 갔는데 제가 더 신났어요.
+                                    수조 앞에 서 있으면 시간 순삭이에요.
+                                    설명회도 꿀잼이라 끝까지 듣게 되더라고요.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="review_box">
+                                <img src="img/index_review2.png" alt="">
+                                <div class="txt">
+                                    <span> 평점<span> &starf; &starf; &starf; &starf; &starf;</span></span>
+                                    <p>
+                                    사람이 많았는데 내부가 넓어서 여유롭게 관람할 수 있었어요.
+                                    동선도 편해서 천천히 둘러보기 좋았고요.
+                                    전체적으로 분위기가 차분해서 좋았어요.
+                                    복잡하지 않아서 더 편하게 즐길 수 있었던 것 같아요.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="review_box">
+                                <img src="img/index_review3.png" alt="">
+                                <div class="txt">
+                                    <span> 평점<span> &starf; &starf; &starf; &starf; &starf;</span></span>
+                                    <p>
+                                    가볍게 들렀다가 생각보다 오래 머물렀어요.
+                                    볼거리가 많아서 지루할 틈이 없더라고요.
+                                    전체적으로 만족스러운 방문이었어요.
+                                    시간이 어떻게 지나갔는지도 모를 정도였어요.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="review_box">
+                                <img src="img/index_review4.png" alt="">
+                                <div class="txt">
+                                    <span> 평점<span> &starf; &starf; &starf; &starf; &starf;</span></span>
+                                    <p>
+                                    사진 찍으려고 갔다가 눈으로 보느라 바빴어요.
+                                    조명이 예뻐서 물속이 더 신비롭게 보이더라고요.
+                                    분위기 덕분에 계속 걷게 됐어요.
+                                    어디를 찍어도 사진이 잘 나와서 만족스러웠어요.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="review_box">
+                                <img src="img/index_review5.png" alt="">
+                                <div class="txt">
+                                    <span> 평점<span> &starf; &starf; &starf; &starf; &starf;</span></span>
+                                    <p>
+                                    수조가 생각보다 높고 커서 시야가 탁 트여 있었어요.
+                                    그래서 그런지 답답함 없이 계속 보게 되더라고요.
+                                    여러 각도에서 보는 재미도 있었고요.
+                                    한 자리에서 오래 서 있게 되는 공간이었어요.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="review-more">리뷰 더보기 &rarr; </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer_bar">
+        <div class="container ">
+            <div class="flex-box">
+                <ul>
+                    <li>티켓 구매하기 <span><i class="fa-solid fa-angle-right"></i></span>
+                        <ul>
+                            <li><a href="javascript:void(0);">일반 입장권</a></li>
+                            <li><a href="javascript:void(0)">연간이용권</a></li>
+                            <li><a href="javascript:void(0)">학생 단체 예약</a></li>
+                            <li><a href="javascript:void(0)">일반 단체 예약</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li>방문 전 정보 <span><i class="fa-solid fa-angle-right"></i></span>
+                        <ul>
+                            <li><a href="javascript:void(0)">운영시간</a></li>
+                            <li><a href="javascript:void(0)">위치 & 교통·주차</a></li>
+                            <li><a href="javascript:void(0)">자주 묻는 질문</a></li>
+                            <li><a href="javascript:void(0)">장애인 편의시설</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li>회사소개 <span><i class="fa-solid fa-angle-right"></i></span>
+                    <ul>
+                        <li><a href="javascript:void(0)">인사말</a></li>
+                        <li><a href="javascript:void(0)">연혁</a></li>
+                        <li><a href="javascript:void(0)">기업비전</a></li>
+                        <li><a href="javascript:void(0)">제휴문의</a></li>
+                    </ul>
+                </li>
+                </ul>
+                <ul>
+                    <li>정책 <span><i class="fa-solid fa-angle-right"></i></span>
+                    <ul>
+                        <li><a href="javascript:void(0)">이용약관</a></li>
+                        <li><a href="javascript:void(0)">개인정보 처리방침</a></li>
+                        <li><a href="javascript:void(0)">개인정보 수집·이용 동의</a></li>
+                    </ul>
+                </li>
+                </ul>
+            </div>
+            <div class="footer_bottom">
+                <p>서울특별시 심해구 고래로 1004 아쿠아 다이브 아쿠아리움 <br>
+                    (주)아쿠아 다이브 | 사업자등록번호 123-45-67890 <br>
+                    대표전화 12-345-6789 ㅣ팩스 98-765-4321 | 통신판매업신고 2026-서울강남-00827호</p>
+                <div class="footer_icon">
+                    <img src="img/footer_icon3.png" alt="">                    
+                    <img src="img/footer_icon1.png" alt="">
+                    <img src="img/footer_icon2.png" alt="">
+                    <img src="img/footer_icon4.png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+<script>
+   // 자바스크립트 =====================================================
+
+    // var swiper = new Swiper(".mySwiper", {
+     
+    // });
+
+
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 20,
+            navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+              breakpoints: {
+            1025: { slidesPerView: 3 },
+            767: { slidesPerView: 2 },  
+            0: { slidesPerView: 1 }     
+            }
+        });
+
+        swiper.on('reachEnd', function () {
+            document.querySelector('.review-more').classList.add('show');
+        }); 
+
+        swiper.on('fromEdge', function () {
+            document.querySelector('.review-more').classList.remove('show');
+        });
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/common.js"></script>
+
+
+ <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+ <script>
+
+
+//  ● 모바일 기기(스마트폰과 태블릿)에서 AOS 동작 제거아래 내용으로 수정할 것   
+
+ AOS.init({ disable: 'mobile' }); 
+
+ </script>
+
+</body>
+</html>

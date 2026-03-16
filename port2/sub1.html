@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://kit.fontawesome.com/efbf198f8e.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Asta+Sans:wght@300..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+<link rel="icon" type="image/png" href="img/favi.png">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/sub1.css">
+<title>Aqua Dive</title>
+<style>
+</style>
+</head>
+<body>
+    <header class="menubar">
+        <nav class="container flex-box">
+            <div class="logo">
+                <a href="index.html"><img src="img/logo.png" alt=""></a>
+            </div>            
+            <ul class="menu flex-box"> <!-- 메인메뉴 -->                       
+                <li><a href="#">소개</a></li>    
+                <li><a href="#">전시</a></li>
+                <li><a href="#">예매</a></li>
+                <li><a href="#">안내</a></li>
+            </ul>
+            <div class="login">
+                Login
+            </div>
+        </nav>
+         <!-- 서브메뉴  -->          
+                <div class="sub "> <!-- 서브메뉴 묶음 -->
+                    <div class="container sub_box flex-box ">
+                        <ul class="blank"> </ul>
+                        <div class="sub_menu_box flex-box">
+                            <ul class="submenu ">
+                                <li><a href="#">시설 소개</a></li>
+                                <li><a href="#">스토리</a></li>
+                                </ul>
+                            <ul class="submenu">
+                                <li><a href="sub1.html">전시존</a></li>
+                                <li><a href="#">체험존</a></li>
+                            </ul>
+                            <ul class="submenu">
+                                <li><a href="sub2.html">입장권 예매</a></li>
+                                <li><a href="#">단체 예매</a></li>
+                                <li><a href="#">프로모션</a></li>
+                            </ul>
+                            <ul class="submenu">
+                                <li><a href="#">관람 안내</a></li>
+                                <li><a href="#">이벤트</a></li>
+                                <li><a href="#">오시는 길</a></li>
+                                <li><a href="#">자주 묻는 질문</a></li>
+                            </ul>
+                        </div>
+                         <ul class="blank"> </ul>
+                    </div>  <!--sub-box 끝-->
+                </div>
+           <!--sub 끝-->
+        </header>
+
+
+    <!-- 모바일 메뉴 
+    ================== -->
+    <div class="mo_header"></div>
+        <div class="menu_phone" id="bt" >
+            <span></span>
+        </div>
+    
+
+
+        <div class="mo_menu">
+            <ul>
+                <li><a href="#">소개</a>
+                    <ul class="mo_submenu" id="intro">
+                        <li><a href="#">시설 소개</a></li>
+                        <li><a href="#">스토리</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">전시</a>
+                    <ul class="mo_submenu"  id="exh">
+                        <li><a href="sub1.html">전시존</a></li>
+                        <li><a href="#">체험존</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">예매</a>
+                    <ul class="mo_submenu" id="res">
+                        <li><a href="sub2.html">입장권 예매</a></li>
+                        <li><a href="#">단체 예매</a></li>
+                        <li><a href="#">프로모션</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">안내</a>
+                    <ul class="mo_submenu" id="ann">
+                        <li><a href="#">관람 안내</a></li>
+                        <li><a href="#">이벤트</a></li>
+                        <li><a href="#">오시는 길</a></li>
+                        <li><a href="#">자주 묻는 질문</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="mo_login">
+                Login
+            </div>
+        </div>
+    <!-- 모바일 메뉴 끝
+    ================== -->
+    <main>
+        <section class="banner">
+            <div class="banner_txt">
+                <h2>EXHIBITION</h2>
+                <p>전 세계 각지의 <br>
+                해양 생태계를 재현한 테마 존</p>
+            </div>
+            <div class="banner_img">
+                <img src="img/sub1_banner.gif" alt="" >
+            </div>
+        </section>
+        <!-- banner 끝=============================================== -->
+        <section class="big_title container">
+            <div class="flex-box">
+                <h2> <span class="line"></span>AQUARIUM</h2>
+            </div>
+            <p>다채로운 해양 생태계가 <span class="txt-span">살아 숨 쉬는 공간</span> 
+                <span class="ann">
+                    생물 보호 및 점검에 따라 일부 관람이 제한될 수 있습니다.
+                </span>
+            </p>
+        </section>
+        <!-- big_title 끝 ================================================ -->
+        <section class="container main_rodmap">
+            <div class="flex-box">
+                    <div class="zone_icon">
+                        <img src="img/sub1_icon1.png" alt="" id="change_bel">
+                        <div><img src="img/sub1_roadmap1.png" alt="" class="rod_icon"></div>
+                        <span class="title">시그니처존</span>
+                    </div>
+                    <div class="zone_icon">
+                         <img src="img/sub1_icon2.png" alt="" id="change_su">
+                        <div><img src="img/sub1_roadmap2.png" alt="" class="rod_icon"></div>
+                        <span class="title">포유류존</span>
+                    </div>
+                    <div class="zone_icon">
+                        <img src="img/sub1_icon3.png" alt="">
+                        <div><img src="img/sub1_roadmap2.png" alt="" class="rod_icon"></div>
+                        <span class="title">상어존</span>
+                    </div>
+                    <div class="zone_icon">
+                        <img src="img/sub1_icon4.png" alt="">
+                       <div> <img src="img/sub1_roadmap2.png" alt="" class="rod_icon"></div>
+                        <span class="title">가오리존</span>
+                    </div>
+                    <div class="zone_icon">
+                        <img src="img/sub1_icon5.png" alt="">
+                        <div><img src="img/sub1_roadmap2.png" alt="" class="rod_icon"></div>
+                        <span class="title">리프존</span>
+                    </div>
+                    <div class="zone_icon">
+                        <img src="img/sub1_icon6.png" alt="">
+                        <div><img src="img/sub1_roadmap2.png" alt="" class="rod_icon"></div>
+                        <span class="title">멸종위기존</span>
+                    </div>
+                </div>
+        </section>
+        <section class="signature">
+                <div id="signature_1">
+                    <div class="big_bel flex-box">
+                        <div class="bel_img">
+                            <img src="img/sub1_beluga.png" alt="">
+                        </div>
+                        <div class="txt_box">
+                            <h2>MARINE EXHIBITION <br>
+                                <span>시그니처존</span>
+                            </h2>
+                            <p>Aqua Dive의 시그니처, 벨루가. <br> 
+                                둥글고 매끄러운 몸과 눈부신 흰빛 피부. <br >
+                                푸른 수조를 힘차게 가르는 순간, <br class="txt_br"> 어우러지는 우아함.<br> <br>
+                                그 아래 깊은 물속, 단단한 갑비늘과 느린 움직임으로 
+                                <span class="txt-span">묵직한 존재감을 드러내는 철갑상어.</span> <br> <br>
+                                우아함과 강인함, 귀여움과 카리스마가 <br class="txt_br">한 공간에서 교차하는 공간.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mini_img container">
+                        <span> <span class="line"></span>어떤 생물들을 만나게 될까요?</span>
+                        <div class="img_icon flex-box">
+                            <div>
+                                <img src="img/sub1_minibeluga.png" alt="">
+                                <p>벨루가</p>
+                            </div>
+                            <div>
+                                <img src="img/sub1_shark.png" alt="">
+                                <p>철갑상어</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="signature_2">
+                    <div class="big_bel flex-box">
+                        <div class="bel_img">
+                            <img src="img/sub1_sudal.png" alt="">
+                        </div>
+                        <div class="txt_box">
+                            <h2>MARINE EXHIBITION <br>
+                                <span>포유류존</span>
+                            </h2>
+                            <p>
+                                물 위에 등을 대고 둥실 떠, 작은 앞발로 <br>
+                                먹이를 꼭 안은 채 세상 태평한 해달. <br> <br>
+                                반짝이는 눈으로 주변을 살피며, <br>
+                                물살을 가르듯 달려와 장난을 거는 수달. <br> <br>
+                                회색빛 점무늬와 둥근 얼굴로 <br>
+                                물속을 차분하게 가로지르는 항만물범. <br> <br>
+                                Aqua Dive에서 가장 사랑스러운 공간.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mini_img container">
+                        <span> 
+                            <span class="line"></span>
+                            어떤 생물들을 만나게 될까요?
+                        </span>
+                        <div class="img_icon flex-box">
+                            <div>
+                                <img src="img/sub1_haedal.png" alt="">
+                                <p>해달</p>
+                            </div>
+                            <div>
+                                <img src="img/sub1_minisudal.png" alt="">
+                                <p>수달</p>
+                            </div>
+                            <div>
+                                <img src="img/sub1_harbor.png" alt="">
+                                <p>항만물범</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section class="program">
+            <div class="container">
+                <h2>PROGRAM</h2>
+                <div class="flex-box">
+                    <div class="pro_box flex-box">
+                        <div class="pro_img">
+                            <img src="img/sub1_program1.png" alt="">
+                        </div>
+                        <div class="time_box">
+                        <h2>피딩</h2>
+                            <div class="time">
+                                <p>운영시간</p>
+                                <p>매일 12 : 30</p>
+                            </div>
+                            <div class="time">
+                                <p>소요시간</p>
+                                <p>20분 ~ 30분</p>
+                            </div>
+                        <div class="pro_txt">
+                            생물 보호 및 점검에 따라 <span>일부 관람이 제한될 수 있습니다.</span>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="pro_box flex-box">
+                        <div class="pro_img">
+                            <img src="img/sub1_program2.png" alt="">
+                        </div>
+                        <div class="time_box">
+                        <h2>트레이닝 시연</h2>
+                            <div class="time">
+                                <p>운영시간</p>
+                                <p>금 14 : 00</p>
+                            </div>
+                            <div class="time">
+                                <p>소요시간</p>
+                                <p>10분 ~ 20분</p>
+                            </div>
+                        <div class="pro_txt">
+                            생물 보호 및 점검에 따라 <span>일부 관람이 제한될 수 있습니다.</span>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+    </main>
+    <footer class="footer_bar">
+        <div class="container ">
+            <div class="flex-box">
+                <ul>
+                    <li>티켓 구매하기 <span><i class="fa-solid fa-angle-right"></i></span>
+                        <ul>
+                            <li><a href="javascript:void(0);">일반 입장권</a></li>
+                            <li><a href="javascript:void(0)">연간이용권</a></li>
+                            <li><a href="javascript:void(0)">학생 단체 예약</a></li>
+                            <li><a href="javascript:void(0)">일반 단체 예약</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li>방문 전 정보 <span><i class="fa-solid fa-angle-right"></i></span>
+                        <ul>
+                            <li><a href="javascript:void(0)">운영시간</a></li>
+                            <li><a href="javascript:void(0)">위치 & 교통·주차</a></li>
+                            <li><a href="javascript:void(0)">자주 묻는 질문</a></li>
+                            <li><a href="javascript:void(0)">장애인 편의시설</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li>회사소개 <span><i class="fa-solid fa-angle-right"></i></span>
+                    <ul>
+                        <li><a href="javascript:void(0)">인사말</a></li>
+                        <li><a href="javascript:void(0)">연혁</a></li>
+                        <li><a href="javascript:void(0)">기업비전</a></li>
+                        <li><a href="javascript:void(0)">제휴문의</a></li>
+                    </ul>
+                </li>
+                </ul>
+                <ul>
+                    <li>정책 <span><i class="fa-solid fa-angle-right"></i></span>
+                    <ul>
+                        <li><a href="javascript:void(0)">이용약관</a></li>
+                        <li><a href="javascript:void(0)">개인정보 처리방침</a></li>
+                        <li><a href="javascript:void(0)">개인정보 수집·이용 동의</a></li>
+                    </ul>
+                </li>
+                </ul>
+            </div>
+            <div class="footer_bottom">
+                <p>서울특별시 심해구 고래로 1004 아쿠아 다이브 아쿠아리움 <br>
+                    (주)아쿠아 다이브 | 사업자등록번호 123-45-67890 <br>
+                    대표전화 12-345-6789 ㅣ팩스 98-765-4321 | 통신판매업신고 2026-서울강남-00827호</p>
+                <div class="footer_icon">
+                    <img src="img/footer_icon3.png" alt="">                    
+                    <img src="img/footer_icon1.png" alt="">
+                    <img src="img/footer_icon2.png" alt="">
+                    <img src="img/footer_icon4.png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+<script>
+    // 자바스크립트 =====================================================
+
+    // var swiper = new Swiper(".mySwiper", {
+     
+    // });
+
+
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 20,
+            navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+              breakpoints: {
+            1025: { slidesPerView: 3 },
+            767: { slidesPerView: 2 },  
+            0: { slidesPerView: 1 }     
+            }
+        });
+
+        swiper.on('reachEnd', function () {
+            document.querySelector('.review-more').classList.add('show');
+        });
+
+        swiper.on('fromEdge', function () {
+            document.querySelector('.review-more').classList.remove('show');
+        });
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/sub1.js"></script>
+</body>
+</html>

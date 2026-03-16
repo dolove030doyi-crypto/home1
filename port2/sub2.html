@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://kit.fontawesome.com/efbf198f8e.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Asta+Sans:wght@300..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+<link rel="icon" type="image/png" href="img/favi.png">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/sub2.css">
+<title>Aqua Dive</title>
+<style>
+</style>
+</head>
+<body>
+    <header class="menubar">
+        <nav class="container flex-box">
+            <div class="logo">
+                <a href="index.html"><img src="img/logo.png" alt=""></a>
+            </div>            
+            <ul class="menu flex-box"> <!-- 메인메뉴 -->                       
+                <li><a href="#">소개</a></li>    
+                <li><a href="#">전시</a></li>
+                <li><a href="#">예매</a></li>
+                <li><a href="#">안내</a></li>
+            </ul>
+            <div class="login">
+                Login
+            </div>
+        </nav>
+         <!-- 서브메뉴  -->          
+                <div class="sub "> <!-- 서브메뉴 묶음 -->
+                    <div class="container sub_box flex-box ">
+                        <ul class="blank"> </ul>
+                        <div class="sub_menu_box flex-box">
+                            <ul class="submenu ">
+                                <li><a href="#">시설 소개</a></li>
+                                <li><a href="#">스토리</a></li>
+                                </ul>
+                            <ul class="submenu">
+                                <li><a href="sub1.html">전시존</a></li>
+                                <li><a href="#">체험존</a></li>
+                            </ul>
+                            <ul class="submenu">
+                                <li><a href="sub2.html">입장권 예매</a></li>
+                                <li><a href="#">단체 예매</a></li>
+                                <li><a href="#">프로모션</a></li>
+                            </ul>
+                            <ul class="submenu">
+                                <li><a href="#">관람 안내</a></li>
+                                <li><a href="#">이벤트</a></li>
+                                <li><a href="#">오시는 길</a></li>
+                                <li><a href="#">자주 묻는 질문</a></li>
+                            </ul>
+                        </div>
+                         <ul class="blank"> </ul>
+                    </div>  <!--sub-box 끝-->
+                </div>
+           <!--sub 끝-->
+        </header>
+
+
+    <!-- 모바일 메뉴 
+    ================== -->
+    <div class="mo_header"></div>
+        <div class="menu_phone" id="bt" >
+            <span></span>
+        </div>
+    
+
+
+        <div class="mo_menu">
+            <ul>
+                <li><a href="#">소개</a>
+                    <ul class="mo_submenu" id="intro">
+                        <li><a href="#">시설 소개</a></li>
+                        <li><a href="#">스토리</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">전시</a>
+                    <ul class="mo_submenu"  id="exh">
+                        <li><a href="sub1.html">전시존</a></li>
+                        <li><a href="#">체험존</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">예매</a>
+                    <ul class="mo_submenu" id="res">
+                        <li><a href="sub2.html">입장권 예매</a></li>
+                        <li><a href="#">단체 예매</a></li>
+                        <li><a href="#">프로모션</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">안내</a>
+                    <ul class="mo_submenu" id="ann">
+                        <li><a href="#">관람 안내</a></li>
+                        <li><a href="#">이벤트</a></li>
+                        <li><a href="#">오시는 길</a></li>
+                        <li><a href="#">자주 묻는 질문</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="mo_login">
+                Login
+            </div>
+        </div>
+    <!-- 모바일 메뉴 끝
+    ================== -->
+
+    <main>
+        <section class="banner">
+            <h2 class="banner_txt">Ticket</h2>
+            <div class="banner_img">
+                <img src="img/sub2_banner.gif" alt="">
+            </div>
+        </section>
+        <section class="ticket container ">
+                <h2>일반 입장권</h2>
+                <div class="kind_list flex-box">
+                        <div class="kind_card">
+                            <img src="img/sub2_img1.png" alt="">
+                            <div class="po">
+                                <div class="button_hover">
+                                    <div class="age">성인 입장권<span>13세 이상</span></div>
+                                    <div class="money">39,600원</div>
+                                </div>
+                                <div onclick="alert('로그인이 필요한 서비스입니다')" class="button-red">티켓 구매</div>
+                            </div>
+                        </div>
+                        <div class="kind_card">
+                            <img src="img/sub2_img2.png" alt="">
+                            <div class="po">
+                                <div class="button_hover">
+                                    <div class="age">어린이 입장권
+                                        <span>3 ~ 12세 아동</span>
+                                    </div>
+                                    <div class="money">29,500원</div>
+                                </div>
+                                <div onclick="alert('로그인이 필요한 서비스입니다')" class="button-red">티켓 구매</div>
+                            </div>
+                        </div>
+                        <div class="kind_card">
+                            <img src="img/sub2_img3.png" alt="">
+                            <div class="po">
+                                <div class="button_hover">
+                                    <div class="age">가족 입장권
+                                        <span>성인 2인, 아동 1인</span>
+                                    </div>
+                                    <div class="money">63,700원</div>
+                                </div>
+                                <div onclick="alert('로그인이 필요한 서비스입니다')" class="button-red">티켓 구매</div>
+                            </div>
+                        </div>
+                        <div class="kind_card">
+                            <img src="img/sub2_img4.png" alt="">
+                            <div class="po">
+                                <div class="button_hover">
+                                    <div class="age">커플 입장권<span>성인 2인</span></div>
+                                    <div class="money">52,800원</div>
+                                </div>
+                                <div onclick="alert('로그인이 필요한 서비스입니다')" class="button-red">티켓 구매</div>
+                            </div>
+                        </div>
+                    </div>
+                <h2>패키지 입장권</h2>
+                <div class="kind_list flex-box">
+                        <div class="kind_card">
+                            <img src="img/sub2_img5.png" alt="">
+                            <div class="po">
+                                <div class="button_hover">
+                                    <div class="age">포토 + 성인 2인<span>매일 10 : 00 ~ 19 : 00</span></div>
+                                    <div class="money">57,800원</div>
+                                </div>
+                                <div onclick="alert('로그인이 필요한 서비스입니다')" class="button-red">티켓 구매</div>
+                            </div>
+                        </div>
+                        <div class="kind_card">
+                            <img src="img/sub2_img6.png" alt="">
+                            <div class="po">
+                                <div class="button_hover">
+                                    <div class="age">어린이 보트 탐험<span>어른 동반 1인 가능</span></div>
+                                    <div class="money">13,500원</div>
+                                </div>
+                                <div onclick="alert('로그인이 필요한 서비스입니다')" class="button-red">티켓 구매</div>
+                            </div>
+                        </div>
+                        <div class="kind_card">
+                            <img src="img/sub2_img7.png" alt="">
+                            <div class="po">
+                                <div class="button_hover">
+                                    <div class="age">머메드이쇼<span>인어 스토리 수중 공연</span></div>
+                                    <div></div>
+                                    <div class="money">11,000원</div>
+                                </div>
+                                <div onclick="alert('로그인이 필요한 서비스입니다.')" class="button-red">티켓 구매</div>
+                            </div>
+                        </div>
+                        <div class="kind_card">
+                            <img src="img/sub2_img8.png" alt="">
+                            <div class="po">
+                                <div class="button_hover">
+                                    <div class="age">캔들/방향제 만들기<span>나만의 향 만들기</span></div>
+                                    <div class="money">16,500원</div>
+                                </div>
+                                <div onclick="alert('로그인이 필요한 서비스입니다.')" class="button-red">티켓 구매</div>
+                            </div>
+                        </div>
+                    </div>
+                <div class="annual">
+                    <h2>연간 이용권</h2>
+                    <div class="annual_card">
+                        <div class="po">
+                            <img src="img/sub2_img9.png" alt="">
+                            <div class="button_hover">
+                                <div class="age">연간 이용권<span>상세보기</span></div>
+                                <div class="auqa">매일 매일 새로워진 아쿠아리움! </div>
+                            </div>
+                            <div onclick="alert('로그인이 필요한 서비스입니다.')"
+                            class="button-red">티켓 구매</div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section class="attentive">
+                <ul class="container">
+                    <li >
+                        <i class="fa-solid fa-circle-exclamation"></i> 
+                        티켓 관련 중요 안내
+                        <ul>
+                            <li>성인/청소년: 만 13세 이상, 아동: 3 ~ 12세</li>
+                            <li>보호자 동반 시 만 3세 미만 유아 무료입장 가능(단체 입장객 제외)</li>
+                            <li>만 3세 미만 유아는 나이 확인 서류 지참 (의료보험증, 가족관계증명서 등 1종)</li>
+                            <li>만 65세 이상 경로우대증 또는 주민등록증 제시 시 할인 적용</li>
+                            <li>장애인 본인 포함 4인까지 할인 적용 (현장 발권 기준, 타 할인 중복 불가)</li>
+                            <!-- <li>더 자세한 내용과 할인 혜택은 프로모션에서 확인!</li> -->
+                        </ul>
+                    </li>
+                </ul>
+            
+        </section>
+        <section class="bottom">
+            <div>
+                <img src="img/sub2_bottom.png" alt="">
+            </div>
+        </section>
+    </main>
+
+      <footer class="footer_bar">
+        <div class="container ">
+            <div class="flex-box">
+                <ul>
+                    <li>티켓 구매하기 <span><i class="fa-solid fa-angle-right"></i></span>
+                        <ul>
+                            <li><a href="javascript:void(0);">일반 입장권</a></li>
+                            <li><a href="javascript:void(0)">연간이용권</a></li>
+                            <li><a href="javascript:void(0)">학생 단체 예약</a></li>
+                            <li><a href="javascript:void(0)">일반 단체 예약</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li>방문 전 정보 <span><i class="fa-solid fa-angle-right"></i></span>
+                        <ul>
+                            <li><a href="javascript:void(0)">운영시간</a></li>
+                            <li><a href="javascript:void(0)">위치 & 교통·주차</a></li>
+                            <li><a href="javascript:void(0)">자주 묻는 질문</a></li>
+                            <li><a href="javascript:void(0)">장애인 편의시설</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li>회사소개 <span><i class="fa-solid fa-angle-right"></i></span>
+                    <ul>
+                        <li><a href="javascript:void(0)">인사말</a></li>
+                        <li><a href="javascript:void(0)">연혁</a></li>
+                        <li><a href="javascript:void(0)">기업비전</a></li>
+                        <li><a href="javascript:void(0)">제휴문의</a></li>
+                    </ul>
+                </li>
+                </ul>
+                <ul>
+                    <li>정책 <span><i class="fa-solid fa-angle-right"></i></span>
+                    <ul>
+                        <li><a href="javascript:void(0)">이용약관</a></li>
+                        <li><a href="javascript:void(0)">개인정보 처리방침</a></li>
+                        <li><a href="javascript:void(0)">개인정보 수집·이용 동의</a></li>
+                    </ul>
+                </li>
+                </ul>
+            </div>
+            <div class="footer_bottom">
+                <p>서울특별시 심해구 고래로 1004 아쿠아 다이브 아쿠아리움 <br>
+                    (주)아쿠아 다이브 | 사업자등록번호 123-45-67890 <br>
+                    대표전화 12-345-6789 ㅣ팩스 98-765-4321 | 통신판매업신고 2026-서울강남-00827호</p>
+                <div class="footer_icon">
+                    <img src="img/footer_icon3.png" alt="">                    
+                    <img src="img/footer_icon1.png" alt="">
+                    <img src="img/footer_icon2.png" alt="">
+                    <img src="img/footer_icon4.png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+<script>
+    // 자바스크립트 =====================================================
+
+    // var swiper = new Swiper(".mySwiper", {
+     
+    // });
+
+
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 20,
+            navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+              breakpoints: {
+            1025: { slidesPerView: 3 },
+            767: { slidesPerView: 2 },  
+            0: { slidesPerView: 1 }     
+            }
+        });
+
+        swiper.on('reachEnd', function () {
+            document.querySelector('.review-more').classList.add('show');
+        });
+
+        swiper.on('fromEdge', function () {
+            document.querySelector('.review-more').classList.remove('show');
+        });
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/common.js"></script>
+</body>
+</html>
