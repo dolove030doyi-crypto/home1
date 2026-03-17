@@ -1,0 +1,502 @@
+
+@charset "UTF-8";
+
+.modal-1400{max-width: 1440px; margin: auto; padding: 20px;}
+
+.modal {
+    display: block;  
+    
+    position: fixed;
+    left: 0;
+    top: 0;    
+
+    overflow-y: auto;
+    
+    width: 100%;
+    height: 100%;   
+
+    background-color: rgba(0, 0, 0, 0.8);
+
+    z-index: 900; /* z-index는 반드시 들어가야 한다 */ }
+
+
+.modal-wrap {
+  
+    position: absolute;
+    left: 10%;/* 항상 수평 영역의 중앙에 위치하도록 설정 */
+    top: 15%;
+    /* background-color: red; */
+    display: block;
+    width:80%;
+    
+    padding-bottom:50px;    
+}
+
+.modal-body{   background-color: #fff;  padding:20px; border-radius: 20px; color: #202124;}  
+.modal-body h2{font-weight: 400; text-align: center; margin-bottom: 20px; color: #505050;}  
+.modal-body .modal-logo > img {width: auto; margin: 0 auto; margin-bottom: 60px;}  
+/* .modal-body .modal-logo { }   */
+.modal-body .con {font-size: 18px; margin-bottom: 30px;}
+.modal-body .con >span{text-align: left; font-weight: 600; display: block; margin-bottom: 4px; font-size: 20px;}
+
+
+
+.modal-close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+
+    display: block;
+    width: 50px;
+  
+
+    border: 0;
+    color: #8E6BA7;
+    cursor: pointer;
+    font-size: 35px;
+}
+
+.modal .web i {
+    text-align: center;
+    font-size: 40px;
+    width: 100%;
+    margin-bottom: 40px;
+    color: #8E6BA7;
+}
+
+
+section.banner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    
+}
+section.banner .gradient{background-image: linear-gradient(to bottom, #141C34 0%, transparent 100%);}
+section.banner .banner_img img{background-color: #fff; height: 100vh;}  
+
+#banner2, #banner3 {display: none;}
+
+
+
+
+
+section.banner .banner_txt{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    width: 100%;
+}
+section.banner .banner_txt h2{font-size: 80px; font-weight: 300;}
+section.banner .banner_txt span{font-weight:bold;}
+
+
+
+
+    /* mainintro ================================================== */
+section.mainintro{background-color: #141C34; padding: 200px 20px;}
+section.mainintro .flex-box{width: 100%; gap: 20px;}
+section.mainintro .flex-box .introbox{
+    background-color: #F6F8FC;
+    width: calc((100% - 20px) / 2);
+    padding: 60px 50px;
+    /* padding: 60px 50px 0 50px; */
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+section.mainintro h2{
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: left;
+    color: #2D303A;
+    /* text-align: center; */
+}
+section.mainintro .open .time,
+section.mainintro .ticket .pay{display: flex; justify-content: space-between; }
+section.mainintro .open,
+section.mainintro .ticket { transition: transform 0.4s ease; }
+/* section.mainintro .ticket .intro_button {height: a;} */
+
+section.mainintro p {font-size: 28px; line-height: 180%; color: #2D303A; } 
+
+section.mainintro .caution {text-align: left; font-size: 20px; color: #595959;  margin-top: 20px; font-weight: 300;} 
+section.mainintro .button-purple{margin-top: 20px; width: 160px; font-size: 20px; margin-bottom: 20px;}
+section.mainintro .button-red {width: 160px; font-size: 20px;   margin-top: 20px; margin-bottom: 20px;}
+section.mainintro .button-purple:hover{color: #6F4BFF; background-color: #E9E8F5;}
+/* section.mainintro .button-red:hover {color: #FF433E; background-color: #FCE5E0;} */
+
+/* 버튼 마우스 호버 ======================================================== */
+
+
+section.mainintro .open .button-purple{
+  position: absolute;
+  left: 50%;
+  bottom: -85px;
+  transform: translate(-50%, 40px);
+  opacity: 0;
+  transition: 0.45s ease;
+}
+
+
+section.mainintro .intro_button{
+  position: absolute;
+  left: 50%;
+  bottom: -85px;
+  transform: translate(-50%, 40px);
+  opacity: 0;
+  display: flex;
+  gap: 10px;
+  transition: 0.45s ease;
+  
+}
+
+section.mainintro .introbox:hover .open,
+section.mainintro .introbox:hover .ticket{
+  transform: translateY(-30px);
+}
+
+section.mainintro .introbox:hover .open .button-purple,
+section.mainintro .introbox:hover .intro_button{
+  transform: translate(-50%, 0);
+  opacity: 1;
+}
+
+
+    /* mainintro 끝 ================================================== */
+
+    /* group ============================================================= */
+    section.group{padding-top: 200px; padding-bottom: 200px; }
+    section.group h2{
+    margin-bottom: 50px;
+    font-size: 60px;
+    color: #2D303A;
+    text-align: center;
+}
+section.group div.flex-box{gap: 20px; width: 100%;
+    
+    overflow: hidden;
+}
+section.group .group_box{
+    width: calc((100% - 40px) / 3);        
+    background-color: #F1F3F5;
+    padding: 60px 50px;
+    text-align: center;
+    position: relative;
+}
+
+section.group .group_box .group_hover{transition: transform 0.4s ease; }
+section.group .group_box img{width: 80px; margin: 0 auto;  }
+section.group .group_box span{font-size: 28px; font-weight: bold; color: #2D303A;}
+section.group .group_box p{font-size: 28px; color: #2D303A; margin-top:20px;}
+/* section.group .group_box .button-purple{} */
+
+/* 버튼 마우스 호버 ============================================ */
+
+section.group .group_box .button-purple{
+    position: absolute;
+    left: 50%;
+    bottom: 25px;
+    transform: translate(-50%, 40px);
+    opacity: 0;
+    transition: 0.45s ease;
+    width: 160px; font-size: 20px;
+}
+section.group .group_box:hover .group_hover{transform: translateY(-30px);}
+section.group .group_box:hover .button-purple{transform: translate(-50%, 0); opacity: 1;}
+
+section.group .button-purple:hover{color: #6F4BFF; background-color: #E9E8F5;}
+
+    /* group 끝 ============================================================= */
+
+    /* program ======================================================== */
+section.program{text-align: center;}
+section.program h2 {font-size: 60px; margin-bottom: 50px;}
+section.program .program_img{position: relative; overflow: hidden; width: 100%;  }
+section.program .program_img img{ filter:brightness(58%); width: 100%;}
+section.program .program_img .program_txt{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 30%;
+    /* transform: translateY(-50%); */
+    transition: transform 0.4s ease;
+}
+section.program .program_img .program_txt span{font-size: 40px; color: #E9E8F5; font-weight: 650;}
+section.program .program_img .program_txt p{font-size: 24px; color: #E9E8F5; margin-top: 40px; text-align: center;}
+/* section.program .program_img .button-purple{width: 160px; font-size: 20px; margin: auto;} */
+
+/* 버튼 마우스 호버============================================================= */
+
+section.program .program_img div:nth-child(3) {
+    position: absolute;
+    left: 50%;
+    bottom:40%;
+    transform: translateX(-50%);
+    opacity: 1;
+    transition: 0.45s ease;
+    width: 160px; font-size: 20px; margin: auto;
+    
+}
+section.program .button-purple:hover{color: #6F4BFF; background-color: #E9E8F5;}
+/* section.program .program_img div:nth-child(3):hover {opacity: 1; color: #6F4BFF; background-color: #E9E8F5;} */
+
+/* program 끝 ======================================================== */
+
+/* swiper */
+.swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      /* background: #fff; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    } 
+
+    :root {
+    --swiper-theme-color: #6F4BFF;
+    }
+
+/* review ======================================================== */
+section.review{background-color: #F1F3F5; padding-top: 200px; padding-bottom: 200px;}
+section.review > .container{position: relative;}
+section.review h2{font-size: 60px; margin-bottom: 50px; text-align: center;}
+section.review .swiper-slide .review_box {width: 100%; margin: auto;}
+section.review .swiper-slide .txt{width: 100%; margin-top: 15px;}
+section.review .swiper-slide span{font-size: 28px; font-weight: 500;}
+section.review .swiper-slide span > span{color: #6F4BFF; font-size: 32px;}
+section.review .swiper-slide p{
+  font-size: 22px;
+  margin: 15px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  line-height: 160%;
+  text-align: justify;
+  }
+
+
+section.review > .container .swiper-button-next{position: absolute; right: -40px; top: calc((50% - 27px));}
+section.review > .container .swiper-button-prev{position: absolute; left: -40px; top: calc((50% - 27px));}
+
+section.review .review-more{
+  opacity: 0;
+  transition: 0.4s;
+  text-align: center;
+  font-size: 28px;
+  color: #6F4BFF;
+  cursor: pointer;
+  font-weight: 500;
+   margin-top: 15px;
+}
+section.review .review-more.show{opacity: 1;}
+
+section.review .swiper-pagination{display: none;}
+
+@media(max-width:1700px){
+  section.program .program_img .program_txt{top: 22%;}
+section.program .program_img div:nth-child(3){bottom:32%;}
+}
+
+
+@media(max-width:1500px){
+  /* section.program .program_img .program_txt{top: 25%;}
+  section.program .program_img div:nth-child(3){bottom:32%;} */
+  /* section.program .program_img img{width: 100%;} */
+}
+@media(max-width:1300px){
+  /* section.program .program_img div:nth-child(3){
+  bottom:190px;
+  
+  } */
+
+  
+}
+@media (max-width: 1200px) {
+  /* section.program .program_img .program_txt{top: 23%;} */
+    section.program .program_img div:nth-child(3) {bottom:27%;}
+}
+
+@media(max-width:1030px){
+    section.banner .banner_img img{height: auto;}
+    section.banner .banner_txt h2{font-size: 52px;}
+
+    /* media mainintro ================================================== */
+    section.mainintro .flex-box .introbox{padding: 60px 35px;}
+    section.mainintro{padding: 80px 0;}
+    section.mainintro h2{font-size: 28px;}
+    section.mainintro p{font-size: 24px;}
+    /* section.mainintro p span {display: block;}  */
+    section.mainintro .caution{font-size: 18px;}
+    /* section.mainintro .button-red {font-size: 20px; } */
+    section.mainintro .button-purple:hover{color: #E9E8F5; background-color: #6F4BFF; }
+    /* section.mainintro .button-red:hover {color: #F3FBFF; background-color: #FF433E;} */
+
+    /* media mainintro 호버 기능 끄기======================================== */
+  section.mainintro .open,
+  section.mainintro .ticket {
+    transform: translateY(-30px);
+  }
+
+  section.mainintro .open .button-purple,
+  section.mainintro .intro_button {
+    opacity: 1;
+    transform: translate(-50%, 0);
+    bottom: -85px; 
+  }
+
+    /* media mainintro 끝 ================================================== */
+
+    /* media group ============================================================= */
+  section.group{padding-top: 80px; padding-bottom: 80px;}
+  section.group .group_box{width: 100%; padding-top:50px; padding-bottom: 80px;}
+  section.group h2{font-size: 40px; margin-bottom: 40px;}
+  section.group .group_box span{font-size: 32px;}
+section.group .group_box img{width: 100px; margin: 0 auto; }
+section.group .group_box p{margin-bottom: 20px;}
+
+    /* media group_box 호버 기능 끄기======================================== */
+  section.group .group_box:hover .group_hover,
+  section.group .group_box .group_hover {
+    transform: translateY(-10px)
+  }
+
+  /* section.group .group_box .button-purple:hover{color: #E9E8F5; background-color: #6F4BFF;} */
+  section.group .group_box .button-purple,
+  section.group .group_box:hover .button-purple {
+    opacity: 1;
+    transform: translate(-50%, 0);
+
+  }
+    
+    /* media group 끝 ============================================================= */
+ 
+section.program h2 {font-size: 40px; margin-bottom: 40px;}
+/* section.program .program_img .program_txt {top: 17%;} */
+section.program .program_img .program_txt span{font-size: 28px;}
+section.program .program_img .program_txt p{ margin-top: 20px;}
+section.program .program_img img{width: 100%; object-position: 0px}
+
+/* section.program .button-purple:hover{color: #E9E8F5; background-color: #6F4BFF;} */
+/* media program 끝 =============================================================== */  
+
+/* media review ========================================================== */
+
+section.review .swiper-button-next, section.review .swiper-button-prev{display: none;}
+section.review .swiper-pagination{display: block;}
+
+ section.review{ padding-top: 80px; padding-bottom: 80px;}
+ section.review h2{font-size: 40px; margin-bottom: 40px;}
+ section.review .swiper-slide span{font-size: 24px;}
+ section.review .swiper-slide span > span{font-size: 28px;}
+section.review .swiper-slide p{margin-bottom: 50px; font-size: 20px; color: #2D303A;}
+
+section.review .review-more{margin-top: 10px; font-size: 24px;}
+
+}
+
+@media(max-width:992px){
+      
+    
+    /* section.program .program_img .program_txt {top: 20%;} */
+    section.program .program_img .program_txt{top:26%;}
+
+/* section.program .program_img:hover .button-purple
+  {font-size: 16px;} */
+
+
+section.program .program_img div:nth-child(3){ bottom: 25%;}
+}
+@media(max-width:820px){
+section.program .program_img div:nth-child(3){ bottom:  11%;}
+}
+@media(max-width:810px){
+  section.program .program_img .program_txt span {
+      font-size: 24px;
+    }
+    section.program .program_img .program_txt p{font-size: 20px;}
+  
+section.program .program_img div:nth-child(3){bottom:  22%; font-size: 16px;}
+}
+
+@media(max-width:767px){
+    section.banner .banner_txt h2{font-size: 28px;}
+    
+    /* media mainintro ================================================== */
+    section.mainintro .flex-box .introbox{width: 100%;}
+    section.mainintro{padding: 60px 0px;}
+    section.mainintro h2{font-size: 24px; text-align: center;}
+    section.mainintro p{font-size: 20px;}
+    section.mainintro .caution{font-size: 16px;}
+    section.mainintro .button-purple, section.mainintro .button-red
+    {font-size: 16px;
+        width: 135px;
+    }
+
+    /* media mainintro 끝 ================================================== */
+
+    /* media group ================================================== */
+
+    section.group h2{margin-bottom: 30px; font-size: 28px;}
+    section.group .group_box img{width: 75px; }
+    section.group .group_box span{font-size: 24px;}
+    section.group .group_box p{font-size: 20px;}
+    
+    section.group .group_box .button-purple, section.group .group_box:hover .button-purple{
+        font-size: 16px;
+        width: 135px;
+            bottom: 35px;
+    }
+     /* media group 끝 ================================================== */
+    
+      /* media program ================================================== */
+
+    section.program h2{margin-bottom: 30px; font-size: 28px;}
+    /* section.program .program_img .program_txt{top: 11%;} */
+    section.program .program_img .program_txt p{ margin-top: 10px;}
+    section.program .program_img div:nth-child(3){ bottom: 26%;}
+     /* media program 끝 ================================================== */
+
+    /* media review ============================================= */
+    section.review h2{margin-bottom: 30px; font-size: 28px;}
+        section.review .swiper-slide span {font-size: 20px;}
+        section.review .swiper-slide span > span{font-size: 24px;}
+    section.review .swiper-slide p{font-size: 16px; margin-bottom:40px}
+    section.review .review-more{font-size: 20px; margin-top: 0;}
+  
+}
+@media(max-width:600px){
+  section.program .program_img .program_txt {top: 10%;}
+  section.program .program_img div:nth-child(3){ bottom: 10%}
+}
+@media(max-width:500px){
+      /* section.program .program_img .program_txt p {margin-top: 10px;} */
+  section.program .program_img .program_txt {top: 12%;}
+  section.program .program_img div:nth-child(3){ bottom:15%;}
+      section.program .program_img .program_txt span{font-size: 20px;}
+      
+  section.program .program_img .program_txt p{font-size: 16px; margin-top: 8px;}
+}
+@media(max-width:350px){
+  section.program .program_img div:nth-child(3){ bottom: 25px;}
+  section.banner .banner_txt{top: 60%;}
+  section.mainintro .button-purple, section.mainintro .button-red{width: 120px;}
+  section.group .group_box .button-purple, section.group .group_box:hover .button-purple{width: 120px;}
+  section.program .program_img div:nth-child(3){width: 120px; bottom:9%;}
+}
